@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wayfable</title>
+<meta name="description" content="Wayfable plans your day around the places worth seeing and tells you the story of every stop.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23b4532a'/><path d='M9 21l4-10 3 7 3-7 4 10' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<style>
+  :root {
+    --bg: #faf7f2; --surface: #ffffff; --text: #1f1b16; --muted: #5d5449;
+    --accent: #b4532a; --line: #e7dfd3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #171411; --surface: #211d19; --text: #f2ece4; --muted: #b3a898; --accent: #e08a5f; --line: #36302a; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 32px 0 0; font-weight: 700; font-size: 20px; letter-spacing: -0.01em; }
+  header span { color: var(--accent); }
+  .hero { padding: 72px 0 56px; }
+  h1 { font-size: clamp(34px, 7vw, 52px); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 20px; }
+  .lead { font-size: 20px; color: var(--muted); margin: 0; max-width: 34em; }
+  h2 { font-size: 24px; letter-spacing: -0.01em; margin: 0 0 16px; }
+  section { padding: 40px 0; border-top: 1px solid var(--line); }
+  .cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+  .card h3 { margin: 0 0 8px; font-size: 17px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  p { margin: 0 0 12px; }
+  a { color: var(--accent); }
+  .status { display: inline-block; font-size: 14px; font-weight: 600; color: var(--accent);
+    border: 1px solid var(--accent); border-radius: 999px; padding: 2px 12px; margin-bottom: 20px; }
+  footer { padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>Way<span>fable</span></header>
+
+  <div class="hero">
+    <div class="status">In development</div>
+    <h1>Plan your day.<br>Hear the story of every stop.</h1>
+    <p class="lead">Wayfable is an AI travel companion. Tell it where you are and how much time you have; it plans a route through the places worth seeing and tells you the story behind each one.</p>
+  </div>
+
+  <section>
+    <h2>How it works</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>A plan that fits your time</h3>
+        <p>Enter a destination and a time window. Wayfable orders the stops around opening hours and walking distance, and re-plans if you run late.</p>
+      </div>
+      <div class="card">
+        <h3>Stories you can trust</h3>
+        <p>Every narration is built from cited sources, so the history you hear is history, not guesswork.</p>
+      </div>
+      <div class="card">
+        <h3>Point and ask</h3>
+        <p>Photograph a facade or an inscription to find out what it is, then ask follow-up questions in your own language.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Starting in Kuşadası</h2>
+    <p>Our first destination is Kuşadası, Türkiye's busiest cruise port and the gateway to Ephesus. Many visitors here have only a few hours ashore, which is exactly the kind of day Wayfable is built to plan.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions, partnerships or guide collaborations: <a href="mailto:sezer@wayfable.app">sezer@wayfable.app</a></p>
+  </section>
+
+  <footer>© 2026 Wayfable</footer>
+</main>
+</body>
+</html>
